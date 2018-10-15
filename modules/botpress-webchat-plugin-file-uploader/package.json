@@ -1,0 +1,47 @@
+{
+  "name": "botpress-webchat-plugin-file-uploader",
+  "description": "File Uploader plugin for Botpress Webchat",
+  "version": "1.0.0",
+  "author": {
+    "name": "Your name",
+    "email": "your@email.com"
+  },
+  "main": "build/index.js",
+  "botpress": {
+    "webBundle": "build/index.js",
+    "noInterface": true,
+    "isPlugin": true,
+    "plugins": [
+      {
+        "entry": "Entry",
+        "position": "overlay"
+      }
+    ]
+  },
+  "peerDependencies": {
+    "botpress": "^10.47.0",
+    "@botpress/channel-web": "^10.47.0"
+  },
+  "dependencies": {
+    "react-dropzone": "^6.2.1",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0"
+  }
+}
