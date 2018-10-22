@@ -4,18 +4,35 @@ module.exports = {
   renderer: '#file-uploader',
 
   jsonSchema: {
-    title: 'A simple file uploader',
-    description: 'A simple file uploader',
+    title: 'New file(s)',
+    description: 'Specify files to upload',
     type: 'object',
-    required: ['title', 'required'],
+    required: ['files'],
+    definitions: {
+      file: {
+        type: 'object',
+        properties: {
+          name: {
+            title: 'File Name',
+            type: 'string',
+            default: ''
+          },
+          required: {
+            title: 'Required',
+            type: 'boolean',
+            default: false
+          }
+        },
+        required: ['name']
+      }
+    },
     properties: {
-      title: {
-        type: 'string',
-        title: 'Document title'
-      },
-      required: {
-        type: 'boolean',
-        title: 'Document is required?'
+      files: {
+        title: 'Files',
+        type: 'array',
+        items: {
+          "$ref": "#/definitions/file"
+        }
       },
       typing: {
         type: 'boolean',

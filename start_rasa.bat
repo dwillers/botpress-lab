@@ -1,0 +1,1 @@
+python -m rasa_nlu.server --path nlu/rasa/models -c nlu/rasa/config.yml --port 8100

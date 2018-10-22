@@ -9,7 +9,10 @@ module.exports = {
     filename: 'index.js'
   },
   module: {
-    rules: [
+    rules: [{
+        test: /\.(s*)css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src'),

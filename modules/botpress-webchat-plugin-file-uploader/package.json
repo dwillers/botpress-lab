@@ -23,6 +23,7 @@
     "@botpress/channel-web": "^10.47.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "react-dropzone": "^6.2.1",
     "webpack": "^3.10.0"
   },
@@ -42,6 +43,9 @@
     "babel-preset-env": "^1.5.1",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0"
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.4",
+    "style-loader": "^0.23.1"
   }
 }

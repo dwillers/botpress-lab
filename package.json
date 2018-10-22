@@ -7,14 +7,15 @@
     "node": ">= 8 < 11"
   },
   "dependencies": {
-    "@botpress/audience": "^10.47.0",
-    "@botpress/builtins": "^10.47.0",
-    "@botpress/channel-web": "^10.47.0",
-    "@botpress/hitl": "^10.47.0",
-    "@botpress/nlu": "^10.47.0",
-    "@botpress/skill-choice": "^10.47.0",
-    "botpress": "^10.47.0",
+    "@botpress/audience": "^10.47.1",
+    "@botpress/builtins": "^10.47.1",
+    "@botpress/channel-web": "^10.47.1",
+    "@botpress/hitl": "^10.47.1",
+    "@botpress/nlu": "^10.47.1",
+    "@botpress/skill-choice": "^10.47.1",
+    "botpress": "^10.47.1",
     "botpress-webchat-plugin-file-uploader": "./modules/botpress-webchat-plugin-file-uploader",
+    "express-fileupload": "^1.0.0",
     "jsdoc-api": "^4.0.3",
     "lodash": "^4.17.10",
     "yn": "^2.0.0"

@@ -1,7 +1,10 @@
 {
   "intentsDir": "./generated/intents",
   "entitiesDir": "./generated/entities",
-  "provider": "native",
+  "provider": "rasa",
   "debugModeEnabled": false,
-  "minimumConfidence": "0.3"
+  "minimumConfidence": "0.3",
+  "rasaEndpoint": "http://localhost:8100/",
+  "rasaToken": "",
+  "rasaProject": "botpress"
 }
